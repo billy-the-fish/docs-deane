@@ -1,55 +1,64 @@
-# Mintlify Starter Kit
+<div align="center">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://assets.timescale.com/timescale-web/brand/show/horizontal-white.svg" />
+        <source media="(prefers-color-scheme: light)" srcset="https://assets.timescale.com/timescale-web/brand/show/horizontal-black.svg" />
+        <img alt="Tiger Data logo" src="https://assets.timescale.com/docs/images/tigerdata-gradient-black.svg" /> 
+    </picture>
+</div>
 
-Use the starter kit to get your docs deployed and ready to customize.
+<div align="center">
+<h3>Tiger Cloud is the modern Postgres data platform for all your applications. It enhances Postgres to handle time series, events, real-time analytics, and vector search—all in a single database alongside transactional workloads.</h3>
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+[![Docs](https://img.shields.io/badge/Read_the_Tiger_Data_docs-black?style=for-the-badge&logo=readthedocs&logoColor=white)](https://docs.TigerData.com/)
+[![SLACK](https://img.shields.io/badge/Ask_the_Tiger_Data_community-black?style=for-the-badge&logo=slack&logoColor=white)](https://timescaledb.slack.com/archives/C4GT3N90X)
+[![Try Tiger Cloud for free](https://img.shields.io/badge/Try_Tiger_Cloud_for_free-black?style=for-the-badge&logo=timescale&logoColor=white)](https://console.cloud.timescale.com/signup)
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+</div> 
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+This repository contains the current source for Tiger Data documentation available at https://docs.tigerdata.com/.
 
-## AI-assisted writing
+We welcome contributions! You can contribute to Tiger Data documentation in the following ways:
 
-Set up your AI coding tool to work with Mintlify:
+- [Create an issue][docs-issues] in this repository and describe the proposed change. Our doc team takes care of it.
+- Update the docs yourself and have your change reviewed and published by our doc team.
 
-```bash
-npx skills add https://mintlify.com/docs
-```
+## Contribute to the Tiger Data docs
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+To make the contribution yourself:
 
-See the [AI tools guides](/ai-tools) for tool-specific setup.
+1. Get the documentation source:
 
-## Development
+    - No write access? [Fork this repository][github-fork].
+    - Already have a write access? [Clone this repository][github-clone].
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+2. Create a branch from `main`, make your changes, and raise a pull request back to `latest`.
 
-```
-npm i -g mint
-```
+   To view the docs locally:
+   1. Install the Mintlify CLI:
+      ```shell
+      npm i -g mint
+      ```
+   2. Preview locally.
+   
+      In the root directory, run the following command. 
+      ```shell
+      mint dev
+      ```
+3. Sign a Contributor License Agreement (CLA).
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+   You have to sign the CLA only the first time you raise a PR. This helps to ensure that the community is free to use your contributions.
 
-```
-mint dev
-```
+4. Review your changes.
 
-View your local preview at `http://localhost:3000`.
+   The documentation site is generated in a separate private repository using [Gatsby][gatsby]. Once you raise a PR for any branch, GitHub **automatically** generates a preview for your changes and attaches the link in the comments. Any new commits are visible at the same URL. If you don't see the latest changes, try an incognito browser window. Automated builds are not available for PRs from forked repositories.
 
-## Publishing changes
+See the [Contributing guide](CONTRIBUTING.md) for style and language guidance.
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+## Learn about Tiger Data
 
-## Need help?
+Tiger Data is Postgres made powerful. To learn more about the company and its products, visit [tigerdata.com](https://www.tigerdata.com).
 
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+[docs-issues]: https://github.com/timescale/docs/issues
+[github-fork]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo
+[github-clone]: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+[gatsby]: https://www.gatsbyjs.com/

@@ -1,0 +1,86 @@
+---
+title: Learn
+sidebarTitle: Overview
+description: Walk through a variety of scenarios that use example datasets, and enable yourself to get the best out of Tiger Data products.
+products: [cloud, mst, self_hosted]
+keywords: [tutorials, examples, guides]
+mode: "wide"
+---
+
+import { CAGG, HYPERTABLE } from '/snippets/vars.mdx';
+
+<CardGroup cols={1}>
+  <Card
+    title="Quickstart"
+    icon="chart-line"
+    href="/tutorials/quickstart"
+  >
+    Get everything ready to start following Tiger Data tutorials. Set up your environment and learn the basics of working with time-series data.
+  </Card>
+</CardGroup>
+
+## By use case
+
+<CardGroup cols={2}>
+  <Card
+    title="AI applications"
+    icon="brain-circuit"
+    href="/tutorials/financial-forecasting"
+  >
+    Build AI-powered financial forecasting models using time-series data and machine learning. Develop predictive maintenance solutions to detect anomalies and prevent equipment failures in real-time.
+  </Card>
+  <Card
+    title="IoT sensors"
+    icon="sensor"
+    href="/tutorials/simulate-iot-sensor-data"
+  >
+    Simulate IoT sensor datasets for testing and development. Create {HYPERTABLE}s for temperature, CPU, and other sensor metrics, then analyze energy consumption patterns and health monitoring data.
+  </Card>
+  <Card
+    title="Real-time dashboards"
+    icon="chart-line-up"
+    href="/tutorials/analyze-transport-data"
+  >
+    Build real-time Grafana dashboards for transport and geospatial data. Visualize taxi ride patterns, analyze location data, and detect anomalies in streaming time-series metrics.
+  </Card>
+  <Card
+    title="System monitoring"
+    icon="monitor-waveform"
+    href="/tutorials/powered-observability"
+  >
+    Implement observability and monitoring solutions with intelligent analytics. Detect anomalies, automate alerting, and use predictive analytics to maintain system health.
+  </Card>
+</CardGroup>
+
+## By industry
+
+<CardGroup cols={2}>
+  <Card
+    title="Energy"
+    icon="bolt"
+    href="/tutorials/analyze-energy-consumption"
+  >
+    Analyze energy consumption data with {CAGG}s and Grafana. Optimize energy production timing, track usage patterns, and build real-time dashboards for grid management.
+  </Card>
+  <Card
+    title="Financial"
+    icon="chart-mixed"
+    href="/tutorials/ingest-real-time-financial-data"
+  >
+    Ingest real-time stock and cryptocurrency data via websockets using Python. Create OHLCV candlestick charts, analyze Bitcoin blockchain transactions, and build financial forecasting models.
+  </Card>
+  <Card
+    title="Healthcare"
+    icon="heart-pulse"
+    href="/tutorials/health-biometical-analysis"
+  >
+    Analyze biomedical time-series data for patient monitoring and medical insights. Track patient vitals, perform health data analysis, and implement observability for healthcare systems.
+  </Card>
+  <Card
+    title="Transport"
+    icon="truck"
+    href="/tutorials/analyze-transport-data"
+  >
+    Analyze transport and geospatial data with real-time dashboards. Track taxi rides, visualize location patterns, optimize routes, and monitor fleet performance using Grafana.
+  </Card>
+</CardGroup>
